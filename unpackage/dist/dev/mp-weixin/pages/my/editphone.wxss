@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.OneRow.data-v-7651450c {
+  width: 750rpx;
+  height: 42rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #666666;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 120rpx;
+}
+.TwoRow.data-v-7651450c {
+  width: 750rpx;
+  height: 30px;
+  font-family: PingFangSC-Medium;
+  font-size: 22px;
+  color: #333333;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 32rpx;
+}
+.bt.data-v-7651450c {
+  width: 690rpx;
+  height: 92rpx;
+  background: #09ABC6;
+  border-radius: 48rpx;
+  margin: 124rpx auto 0;
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  line-height: 92rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: 500;
+}
+.btt.data-v-7651450c {
+  width: 690rpx;
+  height: 92rpx;
+  background: #ECECEC;
+  border-radius: 48rpx;
+  margin: 40rpx auto 0;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 92rpx;
+  text-align: center;
+  font-weight: 400;
+}
+

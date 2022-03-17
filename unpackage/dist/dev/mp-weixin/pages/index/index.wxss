@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.topBox.data-v-57280228 {
+  width: 750rpx;
+  height: 356rpx;
+  background-image: linear-gradient(0deg, #0682C6 2%, #09ABC6 100%);
+  border-radius: 0px 0px 16rpx 6rpx;
+  overflow: hidden;
+}
+.topBox .title.data-v-57280228 {
+  text-align: center;
+  height: 26rpx;
+  opacity: 0.8;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #FFFFFF;
+  line-height: 26rpx;
+  font-weight: 400;
+  margin-top: 48rpx;
+}
+.topBox .num.data-v-57280228 {
+  text-align: center;
+  height: 44rpx;
+  font-family: AvenirNext-DemiBold;
+  font-size: 56rpx;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 44rpx;
+  font-weight: 600;
+  margin-top: 28rpx;
+}
+.topBox .bottonBox.data-v-57280228 {
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80rpx;
+}
+.topBox .bottonBox .item.data-v-57280228 {
+  width: 260rpx;
+  height: 100%;
+}
+.topBox .bottonBox .item .name.data-v-57280228 {
+  height: 26rpx;
+  opacity: 0.8;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 26rpx;
+  font-weight: 400;
+}
+.topBox .bottonBox .item .shuju.data-v-57280228 {
+  height: 44rpx;
+  font-family: AvenirNext-DemiBold;
+  font-size: 36rpx;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 44rpx;
+  font-weight: 600;
+  margin-top: 20rpx;
+}
+.topBox .bottonBox .line.data-v-57280228 {
+  height: 40rpx;
+  opacity: 0.3;
+  border: 1px solid white;
+  margin: 0 55rpx;
+}
+.centerBox.data-v-57280228 {
+  width: 710rpx;
+  height: 850rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  margin: 20rpx auto 40rpx;
+  overflow: hidden;
+  position: relative;
+}
+.centerBox .tuli.data-v-57280228 {
+  width: 100%;
+  height: 100rpx;
+  position: absolute;
+  bottom: 40rpx;
+  box-sizing: border-box;
+  display: flex;
+}
+.centerBox .tuli .text1.data-v-57280228 {
+  font-family: PingFangSC-Regular;
+  font-size: 10px;
+  color: #666666;
+  font-weight: 400;
+  margin-left: 5%;
+}
+.centerBox .tuli .content.data-v-57280228 {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 2%;
+}
+.centerBox .tuli .content .box.data-v-57280228 {
+  width: 90rpx;
+}
+.centerBox .tuli .content .box .totol.data-v-57280228 {
+  height: 3px;
+}
+.centerBox .tuli .content .box .textb.data-v-57280228 {
+  font-family: PingFangSC-Regular;
+  font-size: 10px;
+  color: #666666;
+  text-align: center;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.centerBox .map.data-v-57280228 {
+  width: 650rpx;
+  height: 600.12rpx;
+  margin: 0 auto;
+  margin-top: 40rpx;
+}
+.centerBox .map #container.data-v-57280228 {
+  width: 100%;
+  height: 100%;
+}
+.centerBox .map .chart-canvas.data-v-57280228 {
+  width: 100%;
+  height: 100%;
+}
+

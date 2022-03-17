@@ -1,0 +1,1 @@
+<view><button type="default" data-event-opts="{{[['tap',[['exit',['$event']]]]]}}" bindtap="__e">退出</button><button type="default" data-event-opts="{{[['tap',[['getImg',['$event']]]]]}}" bindtap="__e">登录</button></view>

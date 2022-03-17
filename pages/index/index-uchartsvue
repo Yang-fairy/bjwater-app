@@ -1,0 +1,348 @@
+<template>
+	<view>
+		<view class="topBox">
+			<view class="title">
+				累计用水量（m³）
+			</view>
+			<view class="num">
+				1275.23
+			</view>
+			<view class="bottonBox">
+				<view class="item">
+					<view class="name">
+						自动监测站点数（个）
+					</view>
+					<view class="shuju">
+						18765
+					</view>
+				</view>
+				<view class="line">
+
+				</view>
+				<view class="item">
+					<view class="name">
+						人工监测站点数（个）
+					</view>
+					<view class="shuju">
+						8765
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="centerBox">
+			<view class="map">
+				<!-- <div id="container"></div> -->
+				<canvas :canvas-id="chartId" class="chart-canvas" @touchend="_tap"></canvas>
+			</view>
+			<view class="tuli">
+				<view class="text1">
+					单位 m³
+				</view>
+				<view class="content">
+					<view class="box">
+						<view class="totol" style="background: #10919B;">
+						</view>
+						<view class="textb">
+							>40m³
+						</view>
+					</view>
+					<view class="box">
+						<view class="totol" style="background: #10A7BF;">
+						</view>
+						<view class="textb">
+							30-40m³
+						</view>
+					</view>
+					<view class="box">
+						<view class="totol" style="background:#1FC6DD;">
+						</view>
+						<view class="textb">
+							20-30m³
+						</view>
+					</view>
+					<view class="box">
+						<view class="totol" style="background:#68EAF4 ;">
+						</view>
+						<view class="textb">
+							10-20m³
+						</view>
+					</view>
+					<view class="box">
+						<view class="totol" style="background:#B7FBFF;">
+						</view>
+						<view class="textb">
+							0-10m³
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</template>
+
+
+<script>
+	import uCharts from "@/static/js/u-charts.js";
+	import mapdata from '@/static/js/beijing.json'
+	// import '@/static/js/gaode.js'
+	export default {
+		data() {
+			return {
+				chartId: 'ucharts-demo',
+				chartInstance: null,
+				cWidth: "",
+				cHeight: "",
+				pixelRatio: 1,
+			}
+		},
+		mounted() {
+
+			// wx.createSelectorQuery().selectAll('#container').boundingClientRect(function (rect) {
+			//     console.log(rect,"5555555555555555555")
+			// }).exec() 
+			// var scriptElement = document.createElement('script');
+			// scriptElement.src = "https://webapi.amap.com/maps?v=1.4.15&key=326ed789a3100ba517bd6feed38fbf4a"
+			// document.body.appendChild(scriptElement);
+
+			// setTimeout(() => {
+			// 	var map = new AMap.Map('container', {
+			// 		resizeEnable: true, //是否监控地图容器尺寸变化
+			// 		zoom: 11, //初始化地图层级
+			// 		center: [116.397428, 39.90923] //初始化地图中心点
+			// 	});
+			// }, 500)
+			this.cWidth = uni.upx2px(650);
+			this.cHeight = uni.upx2px(600);
+			this._initChart(this);
+		},
+		methods: {
+			_initChart(_this) {
+				_this.chartInstance = new uCharts({
+					$this: _this,
+					context: uni.createCanvasContext(_this.chartId, _this),
+					canvasId: _this.chartId,
+					width: _this.cWidth * _this.pixelRatio,
+					height: _this.cHeight * _this.pixelRatio,
+					pixelRatio: _this.pixelRatio,
+					// 以下配置请在 https://demo.ucharts.cn/#/ 生成
+					series: mapdata.features,
+					type: "map",
+					canvas2d: true,
+					background: "none",
+					animation: true,
+					timing: "easeOut",
+					duration: 1000,
+					rotate: false,
+					errorReload: true,
+					fontSize: 12,
+					color: ["#1FC6DD", //东城  西城  朝阳 丰台 石景山 海定 门头沟 房山 通州 顺咦  昌平 大兴 怀柔 评估 密云 延庆
+						"#1FC6DD",
+						'#10919B',
+						'#B7FBFF',
+						'#1FC6DD',
+						"#68EAF4",
+						"#1FC6DD",
+						"#B7FBFF",
+						"#B7FBFF",
+						"#B7FBFF",
+						"#10A7BF", //
+						"#1FC6DD",
+						"#68EAF4",
+						"#B7FBFF",
+						'#10919B',
+						'#B7FBFF',
+					],
+					"padding": [0, 0, 0, 0],
+					dataLabel: false,
+					extra: {
+						map: {
+							border: true,
+							activeBorderColor: "#F04864",
+							activeFillColor: "#FACC14",
+							activeFillOpacity: 1,
+							mercator: true,
+							borderColor: '#fff',
+							borderWidth: 2,
+							fillOpacity: 1
+						},
+						tooltip: {
+							showArrow: false,
+							borderRadius: 6,
+
+						}
+					},
+				});
+			},
+			_tap(e) {
+				this.chartInstance.showToolTip(e, {
+					formatter: function(item, category, index, opts) {
+						this.textList = [{
+								text: item.name,
+								color: 'rgba(0,0,0,0)',
+								opacity: 0.7
+							},
+							{
+								text: '累计用量 : ' + 22 + 'm³',
+								color: 'rgba(0,0,0,0)',
+								opacity: 0.7
+							},
+							{
+								text: '查看详情       > ',
+								color: 'rgba(0,0,0,0)',
+								opacity: 0.7
+							}
+						];
+					}
+				});
+			},
+
+		}
+	}
+</script>
+
+<style lang="scss" scoped>
+	.topBox {
+		width: 750rpx;
+		height: 356rpx;
+		background-image: linear-gradient(0deg, #0682C6 2%, #09ABC6 100%);
+		border-radius: 0px 0px 16rpx 6rpx;
+		overflow: hidden;
+
+		.title {
+			text-align: center;
+			height: 26rpx;
+			opacity: 0.8;
+			font-family: PingFangSC-Regular;
+			font-size: 26rpx;
+			color: #FFFFFF;
+			line-height: 26rpx;
+			font-weight: 400;
+			margin-top: 48rpx;
+		}
+
+		.num {
+			text-align: center;
+			height: 44rpx;
+			font-family: AvenirNext-DemiBold;
+			font-size: 56rpx;
+			color: #FFFFFF;
+			text-align: center;
+			line-height: 44rpx;
+			font-weight: 600;
+			margin-top: 28rpx;
+		}
+
+		.bottonBox {
+			height: 90rpx;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 80rpx;
+
+			.item {
+				width: 260rpx;
+				height: 100%;
+
+				.name {
+					height: 26rpx;
+					opacity: 0.8;
+					font-family: PingFangSC-Regular;
+					font-size: 26rpx;
+					color: #FFFFFF;
+					text-align: center;
+					line-height: 26rpx;
+					font-weight: 400;
+				}
+
+				.shuju {
+					height: 44rpx;
+					font-family: AvenirNext-DemiBold;
+					font-size: 36rpx;
+					color: #FFFFFF;
+					text-align: center;
+					line-height: 44rpx;
+					font-weight: 600;
+					margin-top: 20rpx;
+				}
+			}
+
+			.line {
+				height: 40rpx;
+				opacity: 0.3;
+				border: 1px solid rgba(255, 255, 255, 1);
+				margin: 0 55rpx;
+			}
+		}
+	}
+
+	.centerBox {
+		width: 710rpx;
+		height: 850rpx;
+		background: #FFFFFF;
+		border-radius: 16rpx;
+		margin: 20rpx auto 40rpx;
+		overflow: hidden;
+		position: relative;
+
+		.tuli {
+			width: 100%;
+			height: 100rpx;
+			position: absolute;
+			bottom: 40rpx;
+			box-sizing: border-box;
+			display: flex;
+
+			.text1 {
+				font-family: PingFangSC-Regular;
+				font-size: 10px;
+				color: #666666;
+				font-weight: 400;
+				margin-left: 5%;
+			}
+
+			.content {
+				width: 75%;
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				margin-left: 2%;
+
+				.box {
+					width: 90rpx;
+
+					.totol {
+						height: 3px;
+					}
+
+					.textb {
+						font-family: PingFangSC-Regular;
+						font-size: 10px;
+						color: #666666;
+						text-align: center;
+						font-weight: 400;
+						white-space: nowrap;
+					}
+				}
+			}
+
+		}
+
+		.map {
+			width: 650rpx;
+			height: 600.12rpx;
+			margin: 0 auto;
+			margin-top: 40rpx;
+
+			#container {
+				width: 100%;
+				height: 100%;
+			}
+
+			.chart-canvas {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+	}
+</style>

@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "站点详情",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-datetime-picker": "/uni_modules/uni-datetime-picker/components/uni-datetime-picker/uni-datetime-picker",
+    "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "ly-tree": "/components/ly-tree/ly-tree",
+    "w-ring": "/components/uCharts/ring",
+    "w-m-in": "/components/uCharts/min"
+  }
+}

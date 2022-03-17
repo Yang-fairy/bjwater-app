@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.page.data-v-754f51ca {
+  width: 750rpx;
+  background: #F7F7F7;
+}
+.page .header.data-v-754f51ca {
+  width: 100%;
+  height: 164rpx;
+  background-color: #fff;
+  padding: 24rpx 24rpx 0 24rpx;
+  box-sizing: border-box;
+}
+.page .header .top.data-v-754f51ca {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.page .header .top .icon.data-v-754f51ca {
+  width: 32rpx;
+  height: 32rpx;
+  border: 1px solid pink;
+  margin-right: 16rpx;
+}
+.page .header .top .text.data-v-754f51ca {
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #25343B;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+.page .header .top .text1.data-v-754f51ca {
+  position: absolute;
+  right: 0;
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #FFBF00;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+.page .header .bottom.data-v-754f51ca {
+  margin-top: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.page .header .bottom .tiao.data-v-754f51ca {
+  width: 610rpx;
+  height: 16rpx;
+  background: #C1EDF5;
+  border-radius: 8rpx;
+  position: relative;
+}
+.page .header .bottom .tiao .tiao1.data-v-754f51ca {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-image: linear-gradient(90deg, #15D9E5 0%, #09ADE9 100%);
+  border-radius: 4px;
+}
+.page .header .bottom .text.data-v-754f51ca {
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  color: #00CCEE;
+  letter-spacing: 0;
+  text-align: right;
+  line-height: 22.11px;
+  font-weight: 500;
+}
+.page .tit.data-v-754f51ca {
+  font-family: PingFangSC-Semibold;
+  font-size: 16px;
+  color: #09ABC6;
+  letter-spacing: 0;
+  text-align: left;
+  font-weight: 600;
+  margin-top: 32rpx;
+  margin-bottom: 32rpx;
+  padding: 0 24rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.page .tit .yuan.data-v-754f51ca {
+  margin-left: 20rpx;
+  width: 32rpx;
+  height: 32rpx;
+  background: #09ABC6;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+}
+.page .tit .yuan .topSan.data-v-754f51ca {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  /*这行去掉也行*/
+  border-bottom: 5px solid #FFFFFF;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+.page .tit .yuan .bomSan.data-v-754f51ca {
+  width: 0;
+  height: 0;
+  border-top: 5px solid #FFFFFF;
+  /*这行去掉也行*/
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+.page .tit .yuaned.data-v-754f51ca {
+  align-items: flex-end;
+}
+.page .OneBox .BBbox.data-v-754f51ca {
+  width: 100%;
+  background: #FFFFFF;
+}
+.page .OneBox .BBbox .BtnBox.data-v-754f51ca {
+  width: 688.4rpx;
+  height: 105.08rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.page .OneBox .BBbox .BtnBox .btnBB.data-v-754f51ca {
+  width: 180rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page .OneBox .BBbox .BtnBox .btnBB .wenzi.data-v-754f51ca {
+  width: 112rpx;
+  height: 48rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #09ABC6;
+  letter-spacing: 0;
+  text-align: right;
+  line-height: 47.1rpx;
+  font-weight: 400;
+}
+.page .OneBox .topBox.data-v-754f51ca {
+  background: #FFFFFF;
+}
+.page .OneBox .bomBox.data-v-754f51ca {
+  background: #FFFFFF;
+}
+.page .OneBox .item.data-v-754f51ca {
+  width: 688.4rpx;
+  height: 105.08rpx;
+  margin: 0 auto;
+  border-bottom: 0.6rpx solid #E6E6E6;
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #676C77;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page .OneBox .item .name.data-v-754f51ca {
+  width: 130.44rpx;
+  height: 47.1rpx;
+  line-height: 47.1rpx;
+  font-weight: 400;
+  text-align: left;
+}
+.page .OneBox .item .nr.data-v-754f51ca {
+  width: calc(100% - 160rpx);
+  height: 47.1rpx;
+  color: #25343B;
+  text-align: right;
+  line-height: 47.1rpx;
+  font-weight: 400;
+}
+.page .twoBox.data-v-754f51ca {
+  width: 100%;
+  padding: 0 24rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-top: 40rpx;
+}
+.page .twoBox .name.data-v-754f51ca {
+  width: 100%;
+  height: 105.08rpx;
+  line-height: 105.08rpx;
+  background: #FFFFFF;
+  margin-top: 20rpx;
+}
+.page .twoBox .name .name1.data-v-754f51ca {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #E6E6E6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page .twoBox .name .text.data-v-754f51ca {
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #676C77;
+  letter-spacing: 0;
+  line-height: 23.55px;
+  font-weight: 400;
+}
+.page .twoBox .name .inp.data-v-754f51ca {
+  text-align: right;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: grey;
+  letter-spacing: 0;
+  line-height: 23.55px;
+  font-weight: 400;
+}
+.page .btn.data-v-754f51ca {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 106rpx;
+  background: #FFFFFF;
+}
+.page .btn .del.data-v-754f51ca {
+  display: flex;
+  align-items: center;
+  font-family: PingFangSC-Regular;
+  font-size: 15px;
+  color: #C81717;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.page .btn .tiao.data-v-754f51ca {
+  width: 2rpx;
+  height: 38rpx;
+  opacity: 0.3;
+  background-color: #c8c8c8;
+  border: 1px solid #c8c8c8;
+}
+.page .btn .add.data-v-754f51ca {
+  display: flex;
+  align-items: center;
+  font-family: PingFangSC-Regular;
+  font-size: 15px;
+  color: #09ABC6;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+

@@ -1,0 +1,1 @@
+<view class="data-v-7651450c"><view class="OneRow data-v-7651450c">当前绑定手机号</view><view class="TwoRow data-v-7651450c">{{''+$root.m0+''}}</view><view data-event-opts="{{[['tap',[['toPath',['./editphone2']]]]]}}" class="bt data-v-7651450c" bindtap="__e">修改手机号</view><view data-event-opts="{{[['tap',[['back']]]]}}" class="btt data-v-7651450c" bindtap="__e">返回</view></view>

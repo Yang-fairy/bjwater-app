@@ -1,0 +1,1 @@
+<canvas class="chart-canvas" canvas-id="{{chartId}}" ontouch="{{true}}" data-event-opts="{{[['touchend',[['_tap',['$event']]]],['touchmove',[['moveLineA',['$event']]]],['touchstart',[['touchLineA',['$event']]]]]}}" bindtouchend="__e" bindtouchmove="__e" bindtouchstart="__e"></canvas>

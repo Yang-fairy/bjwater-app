@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.can.data-v-ab40afa0 {
+  width: 100%;
+}
+.can .text1.data-v-ab40afa0 {
+  text-align: center;
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #666666;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+.can .cc.data-v-ab40afa0 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+.can .box.data-v-ab40afa0 {
+  height: 40rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.can .box .circ.data-v-ab40afa0 {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+}
+.can .box .text.data-v-ab40afa0 {
+  width: 20%;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  text-align: left;
+  font-size: 20rpx;
+  font-size: 14px;
+  color: #000000;
+  font-weight: 400;
+}
+.chart-canvas.data-v-ab40afa0 {
+  width: 100%;
+  height: 400rpx;
+}
+
